@@ -1,0 +1,322 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+
+  <title>Hello, world!</title>
+  <style>
+    /* Show it is fixed to the top */
+    body {
+      min-height: 75rem;
+      padding-top: 4.5rem;
+      background-color: #F8F7F6;;
+    }
+    .container{
+            background-color: #fff;
+    }
+
+    .navbar-dark {
+      background-color: #4d557c !important;
+    }
+  </style>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Fixed navbar</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
+        aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav me-auto mb-2 mb-md-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Aplication</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link ">Subscription</a>
+          </li>
+        </ul>
+       
+
+     
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Profile</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Billing</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link ">Log Out</a>
+          </li>
+        </ul>
+       
+      </div>
+    </div>
+  </nav>
+
+  <main class="container">
+
+   
+
+    <div class="bg-light">
+      <div class="pb-4">
+        <div class="row">
+
+          <div class="col-3">
+            <div class="card bg-info text-black">
+              <div class="card-body">
+                <h5 class="card-title">Spending</h5>
+                <p class="card-text">10M </p>
+                <a href="#" class="btn btn-link" data-bs-toggle="collapse" data-bs-target="#showSpending">show more</a>
+
+              </div>
+            </div>
+          </div>
+          <div class="col-3">
+            <div class="card bg-danger text-white">
+              <div class="card-body">
+                <h5 class="card-title">Cost</h5>
+                <p class="card-text">10M </p>
+                <a href="#" class="btn btn-link" data-bs-toggle="collapse" data-bs-target="#showCost">show more</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-3">
+            <div class="card bg-warning text-black">
+              <div class="card-body">
+                <h5 class="card-title">This monts</h5>
+                <p class="card-text">10M </p>
+                <a href="#" class="btn btn-link" data-bs-toggle="collapse" data-bs-target="#showThismont">show more</a>
+
+              </div>
+            </div>
+          </div>
+          <div class="col-3">
+            <div class="card bg-success text-white">
+              <div class="card-body">
+                <h5 class="card-title">Next Monts</h5>
+                <p class="card-text">10M </p>
+                <a href="#" class="btn btn-link" data-bs-toggle="collapse" data-bs-target="#showNextmont">show more</a>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- collapse -->
+    <div class="collapse bg-info p-4" id="showSpending">
+      Ida ne'e mak atu hatudu sumariu Spending nian
+
+    </div>
+    <div class="collapse bg-danger text-white p-4" id="showCost">
+      Ida ne'e mak atu hatudu sumariu Cost nian
+
+    </div>
+    <div class="collapse bg-warning p-4" id="showThismont">
+      Ida ne'e mak atu hatudu sumariu fulan ida ne'e nian
+
+    </div>
+    <div class="collapse bg-success text-white p-4" id="showNextmont">
+      Ida ne'e mak atu hatudu sumariu Next Mont nian
+
+    </div>
+
+    <!-- Alert  -->
+    <div class="alert alert-warning alert-dismissible fade show">
+      <h4 alert-heading>Important Notification</h4>
+      Dashboard data Refresh Successfully
+      <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+       </div>
+
+    <div class="pb-4 rounded">
+      <div class="row">
+        <div class="col-2 "><h1> Aplikasaun </h1> </div>
+        <div class="col-10 text-end">
+          <button type="button" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" >Aumenta Dadus</button>
+        </div>
+      </div>
+      </div>
+
+    <div class="pb-4 rounded">
+      <div class="row">
+        <div class="col-2 "> <input type="text" class="form-control" placeholder=" Buka dadus">       </div>
+        <div class="col-10 text-end">
+          <div class="btn-group" role="group" aria-label="Basic example">
+            <button type="button" class="btn btn-outline-primary">Print</button>
+            <button type="button" class="btn btn-outline-primary">Download</button>
+            <button type="button" class="btn btn-outline-primary">PDF</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+
+<div class="table-responsive">
+
+
+    <table class="table">
+      <thead>
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">First</th>
+          <th scope="col">Last</th>
+          <th scope="col">Handle</th>
+          <th scope="col">Handle</th>
+          <th scope="col">Handle</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">1</th>
+          <td>Mark</td>
+          <td>Otto</td>
+          <td>@mdo</td>
+          <td>@mdo</td>
+          <td>@mdo</td>
+        </tr>
+        <tr>
+          <th scope="row">1</th>
+          <td>Mark</td>
+          <td>Otto</td>
+          <td>@mdo</td>
+          <td>@mdo</td>
+          <td>@mdo</td>
+        </tr>
+        <tr>
+          <th scope="row">1</th>
+          <td>Mark</td>
+          <td>Otto</td>
+          <td>@mdo</td>
+          <td>@mdo</td>
+          <td>@mdo</td>
+        </tr>
+        <tr>
+          <th scope="row">1</th>
+          <td>Mark</td>
+          <td>Otto</td>
+          <td>@mdo</td>
+          <td>@mdo</td>
+          <td>@mdo</td>
+        </tr>
+        <tr>
+          <th scope="row">1</th>
+          <td>Mark</td>
+          <td>Otto</td>
+          <td>@mdo</td>
+          <td>@mdo</td>
+          <td>@mdo</td>
+        </tr>
+        <tr>
+          <th scope="row">1</th>
+          <td>Mark</td>
+          <td>Otto</td>
+          <td>@mdo</td>
+          <td>@mdo</td>
+          <td>@mdo</td>
+        </tr>
+        <tr>
+          <th scope="row">1</th>
+          <td>Mark</td>
+          <td>Otto</td>
+          <td>@mdo</td>
+          <td>@mdo</td>
+          <td>@mdo</td>
+        </tr>
+        <tr>
+          <th scope="row">1</th>
+          <td>Mark</td>
+          <td>Otto</td>
+          <td>@mdo</td>
+          <td>@mdo</td>
+          <td>@mdo</td>
+        </tr>
+        <tr>
+          <th scope="row">2</th>
+          <td>Jacob</td>
+          <td>Thornton</td>
+          <td>@fat</td>
+          <td>@fat</td>
+          <td>@fat</td>
+        </tr>
+        <tr>
+          <th scope="row">3</th>
+          <td colspan="2">Larry the Bird</td>
+          <td>@twitter</td>
+          <td>@twitter</td>
+          <td>@twitter</td>
+        </tr>
+      </tbody>
+    </table>
+
+  </div>
+  <div class="pb-4 rounded">
+    <div class="row">
+      <div class="col-10 "> Hamosu dadus husi 1 to 10 </div>
+      <div class="col-2 text-right">
+        <div class="btn-group" role="group" aria-label="Basic example">
+          <button type="button" class="btn btn-outline-primary">1</button>
+          <button type="button" class="btn btn-outline-primary">2</button>
+          <button type="button" class="btn btn-outline-primary">3</button>
+          <button type="button" class="btn btn-outline-primary">4</button>
+          <button type="button" class="btn btn-outline-primary">5</button>
+          <button type="button" class="btn btn-outline-primary">6</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+  </div>
+  </main>
+  
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Aumenta daddus foun</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        Ida ne'e mak janela modal
+        <p>
+          Iha bele kria formulariu iha ne'e!
+        </p>
+        <p> <input type="text" class="form-control" name="Naran" placeholder="Prense naran"></p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">aumenta dadus</button>
+      </div>
+    </div>
+  </div>
+</div>
+  <!-- Optional JavaScript; choose one of the two! -->
+
+  <!-- Option 1: Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+    crossorigin="anonymous"></script>
+
+  <!-- Option 2: Separate Popper and Bootstrap JS -->
+  <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-W8fXfP3gkOKtndU4JGtKDvXbO53Wy8SZCQHczT5FMiiqmQfUpWbYdTil/SxwZgAN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js" integrity="sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/" crossorigin="anonymous"></script>
+    -->
+</body>
+
+</html>
